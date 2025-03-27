@@ -19,7 +19,7 @@ const app = express();
 app.use(cors(corsOptions));
 require("dotenv").config();
 
-const PORT = 3001 || process.env.PORT;
+const PORT = 8080 || process.env.PORT;
 
 const uri = process.env.MONGODB_KEY;
 const client = new MongoClient(uri, {
